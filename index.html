@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Mom!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to right, #ffe0e9, #ffccd5);
+      text-align: center;
+      color: #333;
+    }
+
+    .container {
+      max-width: 90%;
+      margin: 5vh auto;
+      padding: 5vw;
+      background: #fff0f5;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 8vw;
+      color: #d6336c;
+      margin-bottom: 4vw;
+    }
+
+    img {
+      width: 60vw;
+      max-width: 250px;
+      border-radius: 50%;
+      margin: 5vw 0;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    p {
+      font-size: 4vw;
+      line-height: 1.6;
+      margin: 4vw 0;
+    }
+
+    button {
+      background-color: #d6336c;
+      color: white;
+      border: none;
+      padding: 3vw 6vw;
+      font-size: 4vw;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ad1457;
+    }
+
+    @media (min-width: 600px) {
+      h1 {
+        font-size: 2.5em;
+      }
+
+      p {
+        font-size: 1.2em;
+      }
+
+      button {
+        font-size: 1em;
+        padding: 12px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Happy Birthday Mummyyy! 🎉</h1>
+    <img src="mummyy.jpg" alt="Our Picture" />
+    <p>
+      You are the most wonderful woman I know, you're the best person ever. Love you.
+      <br><br>
+      I love you more than words can say. May your day be filled with joy, love, and everything you deserve! 💖
+    </p>
+    <button onclick="playSong()">Play Your Song 🎵</button>
+    <audio id="birthdaySong" src="C:\Users\laksh\Downloads\128-Rajnigandha Phool Tumhare - Rajnigandha 128 Kbps.mp3"></audio>
+  </div>
+
+  <script>
+    function playSong() {
+      const audio = document.getElementById("birthdaySong");
+      audio.play();
+    }
+  </script>
+
+</body>
+</html>
